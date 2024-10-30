@@ -45,7 +45,7 @@ main {
 }
 .all-heading {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .all-arrows {
   display: flex;
@@ -388,6 +388,17 @@ input {
 }
 .heading h4 {
   color: #00ff66;
+}
+/* Explore Our Products section */
+.new-product {
+  height: 26px;
+  width: 55px;
+  background-color: #00ff66;
+  color: #f5f5f5;
+  text-align: center;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
 }
 /* responsive for tablet */
 
