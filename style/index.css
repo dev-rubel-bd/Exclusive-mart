@@ -389,7 +389,6 @@ input {
 .heading h4 {
   color: #00ff66;
 }
-/* ##################################### */
 /* responsive for tablet */
 
 @media (max-width: 768px) {
@@ -445,4 +444,3 @@ input {
     display: none;
   }
 }
-/* %%%%%%%%%%% */
