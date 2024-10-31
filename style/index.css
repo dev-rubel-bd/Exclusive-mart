@@ -99,8 +99,6 @@ main {
   width: 100%;
   bottom: 20%;
 }
-.product-details {
-}
 .product-title {
   font-size: 18px;
   margin: 10px 0;
@@ -399,6 +397,98 @@ input {
   border-radius: 5px;
   text-align: center;
   padding-top: 5px;
+}
+.color-options {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.color-options input {
+  background-color: #00ff66;
+}
+
+.color-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+/* benefit section */
+.benefi-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 120px 0px;
+}
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-item img {
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+}
+.benefit-item h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.benefit-item p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* footer section start */
+.footer {
+  height: 440px;
+  width: auto;
+  background-color: #000000;
+  padding: 0px 8%;
+}
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.footer-logo {
+  height: 24px;
+  width: 118px;
+  margin-top: 45px;
+}
+.footer-deatils h6 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.footer-deatils p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.download-app {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.app-store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.social-media-icon {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.Copyright p {
+  font-size: 14px;
+  color: #7d7e7e;
+  text-align: center;
+  padding-top: 50px;
 }
 /* responsive for tablet */
 
