@@ -230,11 +230,12 @@ input {
   list-style: none;
   margin-top: 25px;
 }
-
-#dropdown-right-space {
-  margin-left: 60px;
+.hero-left ul {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-#divider {
+
+.divider {
   border-left: 0.5px solid #b7afaf;
   height: 410px;
   left: 30%;
@@ -242,7 +243,7 @@ input {
 }
 .hero-right {
   width: 80%;
-  height: 400px;
+  height: auto;
   margin: 30px 0 0 0;
   background-color: black;
   display: flex;
@@ -256,8 +257,8 @@ input {
   color: white;
 }
 .hero-right img {
-  width: 496px;
-  height: 390px;
+  width: 100%;
+  height: auto;
 }
 .iphone {
   display: flex;
@@ -289,7 +290,7 @@ input {
   margin-bottom: 20px;
 }
 .hero-img img {
-  height: 352px;
+  height: 100%;
   width: 496px;
 }
 /* Flash sale section */
@@ -327,6 +328,7 @@ input {
 .category-container {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
   align-items: center;
   padding: 50px 0;
 }
@@ -357,7 +359,7 @@ input {
 /*   Best Selling Products music speker section  */
 .music-speker-section {
   width: 100%;
-  height: 500px;
+  height: auto;
   margin: 30px 0 0 0;
   background-color: black;
   display: flex;
@@ -413,8 +415,9 @@ input {
   border-radius: 50%;
   border: 1px solid #ddd;
 }
+
 /* benefit section */
-.benefi-section {
+.benefit-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -442,7 +445,7 @@ input {
 }
 /* footer section start */
 .footer {
-  height: 440px;
+  height: 100%;
   width: auto;
   background-color: #000000;
   padding: 0px 8%;
@@ -488,24 +491,59 @@ input {
   font-size: 14px;
   color: #7d7e7e;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 /* responsive for tablet */
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
+  /* common responsive */
+  main {
+    padding: 0px 6%;
+  }
+  .navbar,
+  .nav-ul,
+  #nav-header,
+  .hero-right,
+  .all-header,
+  .music-speker-section,
+  .benefit-section,
+  .hero,
+  .hero-left {
+    flex-direction: column;
+    text-align: center;
+  }
+  .all-arrows {
+    margin-left: auto;
+  }
+  .title-name {
+    font-size: 12px;
+  }
+
+  .all-heading {
+    font-size: 26px;
+  }
+  .common-button {
+    height: 48px;
+    width: 180px;
+  }
+
+  /* all  sale card */
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .category-card {
+    height: 140px;
+    width: 150px;
+  }
+
+  /* nav section */
   #nav-header {
     height: 80px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-ul {
-    flex-direction: column;
   }
 
   .nav-ul li {
@@ -520,15 +558,111 @@ input {
   .nav-form input[type="search"] {
     width: 80%;
   }
+  /* Hero section */
+  .iphone img {
+    width: 20px;
+    height: 25px;
+  }
+  .iphone h2 {
+    margin: 10px 0 10px 10px;
+  }
 
-  .navbar-right-side {
-    flex-direction: row;
-    justify-content: center;
+  .heading h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .iphone h2 {
+    font-size: 24px;
+  }
+
+  .shop h3 {
+    color: #ffff;
+    border-bottom: 3px solid #ffff;
+    display: flex;
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .hero-right {
+    width: 100%;
+    height: auto;
+  }
+  .hero-left {
     width: 100%;
   }
+  .hero-left ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    column-gap: 40px;
+  }
+  .divider {
+    display: none;
+  }
+  /* flash sale section  */
+
+  .hero-time-block span {
+    display: block;
+    font-size: 20px;
+  }
+
+  .hero-time-block small {
+    font-size: 8px;
+    color: #555;
+  }
+  .countdown-timer p {
+    color: #db4444;
+    font-size: 18px;
+  }
+
+  .countdown-timer {
+    justify-content: space-between;
+    gap: 3px;
+  }
+
+  .all-arrows {
+    gap: 8px;
+  }
+
+  .arrow-icon img {
+    width: 18px;
+    height: 18px;
+  }
+  /* Browse By category section */
+  .category-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  /* Best Selling Products music speker section */
+  .hero-img img {
+    height: 100%;
+    width: 300px;
+    padding-bottom: 50px;
+  }
+  /* footer section */
+  .footer-item {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
+/* ############################################## */
 /* Responsive for mobile */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  /* Common responsive */
+  .all-heading {
+    font-size: 20px;
+  }
+  /* all sale card */
+  .card-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  /* nav section */
   .header-text {
     font-size: 12px;
   }
@@ -543,5 +677,37 @@ input {
 
   .header-text ins {
     display: none;
+  }
+  /* Hero section */
+  .iphone h2 {
+    font-size: 14px;
+  }
+  .hero-left ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  /* Browse By category section  */
+  .category-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .category-card {
+    height: 120px;
+    width: 140px;
+  }
+  /* Best Selling Products music speker section */
+  .hero-img img {
+    height: 100%;
+    width: 200px;
+    padding-bottom: 50px;
+  }
+  /* footer section */
+  .footer-item {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
